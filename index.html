@@ -8,13 +8,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="author" content="Vitalii Kondratiuk">
-<title>John Correia's Podcasts</title>
+<title>Vitalii Kondratiuk | Podcasts</title>
 
 <style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0 20px; }
+html {
+    scroll-behavior: smooth;
+}
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0 20px; transition: background-color 0.35s, color 0.35s; }
 h1 { text-align: center; }
 h2 { text-align: center; }
 a { color: inherit; }
+
+button {
+    background-color: #7655a5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #9271bf;
+    transform: translateY(-2px);
+}
 
 ul {
     margin: 0;
@@ -23,10 +43,28 @@ ul {
     text-align: center;
 }
 
+ul img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px #00000022;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+ul img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 28px #00000033;
+}
+
+iframe {
+    max-width: 100%;
+}
+
 #embed-block {
     margin: 50px -20px 0;
     padding: 30px 20px 40px;
     text-align: center;
+    transition: background-color 0.35s, color 0.35s;
 }
 </style>
 </head>
@@ -103,8 +141,8 @@ ul {
 <p style="text-align: center;">Built by Vitalii Kondratiuk &middot; BMIS 235</p>
 
 <script>
-  var lightColor = "#f2f2f2";
-  var darkColor = "#222222";
+  var lightColor = "#F5F0E8";
+  var darkColor = "#21162E";
 
   var dark = false;
 
